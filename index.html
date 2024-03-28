@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            padding-top: 90px;
+        }
+
+        .base {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            background: #c27460;
+            width: 400px;
+            height: 350px;
+            /* background-image: url(bricks.jpg); */
+        }
+
+        .porta {
+            height: 180px;
+            width: 90px;
+            background: #754426;
+            border: 3px solid #4f2e1a;
+            border-bottom: 0;
+        }
+        .janela-wrapper{
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+            margin-bottom: -80px;
+
+        }
+        .janela {
+            height: 60px;
+            width: 60px;
+            background: #cae7e9;
+        }
+
+        .telhado {
+            position: relative;
+            margin-left: -50px;
+
+            width: 0;
+            height: 0;
+            border-left: 250px solid transparent;
+            border-right: 250px solid transparent;
+            border-bottom: 250px solid #78442a;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="telhado">
+            </div>
+            <div class="base">
+                <div class="janela-wrapper">
+                    <div class="janela"></div>
+                    <div class="janela"></div>
+                </div>
+                <div class="porta"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
